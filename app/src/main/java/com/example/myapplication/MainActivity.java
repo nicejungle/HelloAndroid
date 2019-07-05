@@ -25,8 +25,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Intent intent= new Intent(MainActivity.this,SecondActivity.class); 显式intent
                 //隐式intent intent action字符串配置在AndroidManifest.xml文件里
+                String data = "Hello Leader";
                 Intent intent = new Intent("com.example.myapplication.ACTION_START");
                 intent.addCategory("com.example.myapplication.MY_CATEGORY");
+                intent.putExtra("extra_data", data);//传输数据
                 startActivity(intent);
                 //Toast.makeText(MainActivity.this, "You clicked Button 1",
                        // Toast.LENGTH_SHORT).show();
