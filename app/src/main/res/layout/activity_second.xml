@@ -13,9 +13,8 @@
         android:id="@+id/name_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="85dp"
-        android:text="这是第二个画面"
+        android:layout_gravity="center"
+        android:text="@string/screen2"
         android:textSize="11pt" />
 
 </LinearLayout>
